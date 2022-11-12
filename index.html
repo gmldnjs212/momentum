@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>나만의 동기부여 홈화면 만들기</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+            * {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            body {
+                background-image: url('background.jpg');
+                background-size: 100vw;
+                background-position: center;
+                background-repeat: no-repeat;
+                overflow: hidden;
+
+                color : white;
+                /* backdrop-filter: blur(3px); */
+            }
+
+            .main {
+               width: 100vw;
+               height: 80vh;
+               
+               /* 화면을 가운데로 이동시켜주는 부분 */
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+            }
+
+            .time {
+                font-size: 150px;
+                font-weight: bold;
+            }
+            
+            .greeting {
+                font-size: 80px;
+            }
+
+            .todo{
+                font-size: 30px;
+            }
+
+            .quote {
+                width: 100vw;
+                height: 20vh;
+
+                margin-top: 50px;
+                margin-bottom: 0px;
+                /* 화면을 가운데로 이동시켜주는 부분 */
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+            }
+            
+            .author {
+                font-size: 25px;
+                font-style: italic;
+            }
+
+        </style>
+        
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <div class="main">
+            <div id="time" class="time">Loading..</div>
+            <div class="greeting">Hello, Heewon!</div>
+            <div class="todo">바로바로 복습하기!</div>
+        </div>
+        <div class="quote" style="color:black">
+            <div id="author" class="author">- 명언의 저자 -</div>
+            <div id="content" class="content">" 명언의 내용 "</div>
+        </div>
+    </body>
+
+</html>
